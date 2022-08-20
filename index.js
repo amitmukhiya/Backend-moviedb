@@ -27,7 +27,7 @@ app.post("/api/register", async (req, res) => {
     }
 });
 
-// For user login
+// For user login credential
 app.post("/api/login", async (req, res) => {
     console.log(req.body);
     const user = await User.findOne({
