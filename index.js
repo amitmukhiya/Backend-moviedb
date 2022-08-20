@@ -8,7 +8,8 @@ const jwt=require('jsonwebtoken')
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb://localhost:27017/movie");
+mongoose.connect("mongodb+srv://amitmukhiya:nRpqCddfbj037jIn@moviedb.8wzc9yl.mongodb.net/test", { useNewUrlParser: true });
+// password : nRpqCddfbj037jIn
 
 // For user Registration data
 app.post("/api/register", async (req, res) => {
