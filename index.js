@@ -10,7 +10,7 @@ app.use(express.json());
 
 mongoose.connect("mongodb://localhost:27017/movie");
 
-// For user Registration
+// For user Registration data
 app.post("/api/register", async (req, res) => {
     console.log(req.body);
     try {
