@@ -5,7 +5,7 @@ const app = express();
 const userData = require("./userdata");
 const jwt=require('jsonwebtoken')
 
-// app.use(cors());;
+app.use(cors())
 app.use(express.json());
 
 mongoose.connect("mongodb+srv://amitmukhiya:nRpqCddfbj037jIn@moviedb.8wzc9yl.mongodb.net/test", { useNewUrlParser: true });
